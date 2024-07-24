@@ -671,8 +671,8 @@ video {
   height: 100%;
 }
 
-.w-40 {
-  width: 10rem;
+.w-48 {
+  width: 12rem;
 }
 
 .w-52 {
@@ -681,14 +681,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-44 {
-  width: 11rem;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .flex-col {
@@ -1089,8 +1081,7 @@ body{
 }
 
 .ficon:hover {
-  filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
-      brightness(101%) contrast(96%);
+  filter: brightness(0) saturate(100%) invert(73%) sepia(9%) saturate(3228%) hue-rotate(163deg) brightness(101%) contrast(101%)
 }
 
 .btn-green {

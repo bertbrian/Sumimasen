@@ -37,8 +37,7 @@ body{
 }
 
 .ficon:hover {
-    filter: invert(53%) sepia(38%) saturate(3303%) hue-rotate(326deg)
-      brightness(101%) contrast(96%);
+    filter: brightness(0) saturate(100%) invert(73%) sepia(9%) saturate(3228%) hue-rotate(163deg) brightness(101%) contrast(101%)
   }
 
 .btn-green {
