@@ -8,8 +8,8 @@ body{
 }
 
 
-.gradient-header {
-  @apply mx-auto bg-gradient-to-tr  from-cyan-500 to-blue-300 bg-clip-text text-transparent
+.header-img {
+  @apply bg-[url('image/sumimasen-text.svg')]
 }
 
 .gradient-text{
@@ -17,16 +17,20 @@ body{
 }
 
 .item-container {
-    @apply flex flex-col items-center justify-center space-y-4 text-center lg:space-y-0 lg:my-12
+    @apply flex flex-col items-center justify-center space-y-0 text-center w-full
   }
 
-.image-wrapper{
-    @apply flex items-center lg:w-[30%] mb-0
-}  
-
-.desc-wrapper {
-    @apply flex flex-col items-center lg:w-[30%]
+.product-container {
+  @apply flex flex-col items-center justify-between space-y-10 lg:space-x-10 text-center w-full lg:flex-row lg:space-y-0
 }
+
+.feature-desc{
+   @apply text-xl font-semibold lg:text-3xl
+}
+
+.image-wrapper{
+    @apply flex size-52 md:size-80 lg:size-96
+}  
 
 .item-title {
     @apply text-3xl font-semibold w-full
@@ -62,9 +66,9 @@ body{
   position: absolute;
   width: 24px;
   height: 3px;
-  top: 0;
-  left: 0;
-  background: #000;
+  top:0;
+  right:14px;
+  background: white;
   transform: rotate(0);
   transition: all 0.5s;
 }
@@ -75,7 +79,7 @@ body{
 
 .hamburger-bottom {
   transform: translateY(14px);
-  background: #000;
+  background: #fff;
 }
 
 .open {

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/mascot.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>SUMIMASEN INDONESIA</title>
 </head>
 <body class="overflow-x-hidden">
@@ -14,34 +16,33 @@
         <!-- Flex Container For Nav Items -->
          <div class="flex items-center justify-between space-x-20 my-6 text-white">
           <!-- logo-cropped -->
-           <div class="z-30 flex items-center">
+           <div class="flex items-center justify-center">
             <img src="images/mascot.png" alt="" class="size-20">
-            <a href="#" class="gradient-header font-semibold text-3xl md:hidden">SUMIMASEN</a>
+            <img src="images/sumimasen-text.svg" alt="" class="w-full md:hidden">
            </div>
             <!-- Menu Items -->
             <div class="hidden items-center space-x-10 uppercase md:flex">
-                <a href="#" class="tracking-widest hover:text-blue-300">Pricing</a>
-                <a href="#products" class="tracking-widest hover:text-blue-300 ">Products</a> 
-                <a href="#" class="w-40 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2">Get it now!</a>
-
-            <!-- Get Sumimasen -->
-             <!-- <div class="hidden md:flex">
-                <a href="#" class="uppercase font-semibold btn-green">Get Sumimasen</a>
-             </div> -->
+              <a href="#products" class="tracking-widest hover:text-blue-300 ">Products</a> 
+                <a href="#aboutus" class="tracking-widest hover:text-blue-300">About us</a>
+                <a href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F" target="_blank" rel="noopener noreferrer" class="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2">Become Reseller</a>
             </div>
              <!-- Hamburger Button -->
          <button
-         id="menu-btn"
-         class="z-30 block md:hidden focus:outline-none hamburger"
-       >
-         <span class="hamburger-top"></span>
-         <span class="hamburger-middle"></span>
-         <span class="hamburger-bottom"></span>
-       </button>
-             
+            id="menu-btn"
+            class="z-30 block md:hidden focus:outline-none hamburger"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
          </div>
-         
         <!-- Mobile Menu -->
+         <div id="menu" class="absolute hidden p-6 rounded-lg bg-gray-700 left-6 right-6 top-6">
+          <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm z-35">
+            <a href="#products" class="w-full text-center">Products</a>
+            <a href="#aboutus" class="w-full text-center">About us</a>
+          </div>
+         </div>
       <div
       id="menu"
       class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue"
@@ -63,72 +64,89 @@
     <!-- Hero Section -->
     <section id="hero">
         <!-- Container For Image & Content -->
-         <div class="container flex flex-col mx-auto p-6">
+         <div class="container flex flex-col mx-auto md:p-6 md:mb-20 md:mt-16">
             <!-- Image -->
-            <img src="images/logo-cropped.svg" alt="" class="mx-auto size-1/2">
+            <img src="images/logo-cropped.svg" alt="" class="hidden  md:block mx-auto lg:size-3/4">
             <!-- Content -->
-             <div class="flex flex-col space-y-10 lg:mt-16 justify-center">
-                <h1 class="gradient-text text-3xl font-semibold text-center lg:text-5xl uppercase">#BeSafeorBeSorry</h1>
+             <div class="flex flex-col space-y-10 lg:mt-16 lg:mb-10 justify-center">
+                <h1 class="gradient-text text-4xl font-semibold text-center lg:text-5xl uppercase">#BeSafeorBeSorry</h1>
              </div>
             <!-- Button -->
-             <div class="flex flex-col mx-auto space-y-4 p-6 lg:flex-row lg:space-x-12 lg:space-y-0">
-                <a href="#" class="w-32 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2">Tokopedia</a>
-                <a href="#" class="w-32 text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 shadow-lg shadow-orange-500/50 dark:shadow-lg dark:shadow-orange-800/80 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2">Shopee</a>
-                
+             <div class="flex flex-col mx-auto space-y-4 p-6 pb-24 md:pb-0 lg:flex-row lg:space-x-12 lg:space-y-0">
+                <a href="https://www.tokopedia.com/sumimasen-indonesia" target="_blank" rel="noopener noreferrer" class="w-52 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2">Tokopedia</a>
+                <a href="https://s.shopee.co.id/AKGSwFHnL3" target="_blank" rel="noopener noreferrer" class="w-52 text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 shadow-lg shadow-orange-500/50 dark:shadow-lg dark:shadow-orange-800/80 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2">Shopee</a>
               </div>
          </div>
     </section>
     <!-- Products -->
-    <section id="products" class="pt-12">
+    <section id="products" class="lg:pt-14">
       <!-- Container -->
-      <div class="container mx-auto px-6 pb-32 space-y-10">
-        <h3 class="text-center font-semibold text-6xl">Products</h3>
+      <div class="container mx-auto px-6 pb-14 lg:pb-32 space-y-10">
+        <h3 class="text-center text-4xl font-semibold lg:text-6xl">Products</h3>
         <!-- First Row -->
-        <div class="item-container lg:flex-row lg:space-x-8">
-          <div class="image-wrapper justify-end">
-            <img src="images/ultrathin.svg" alt="" class="size-2/3">
+        <div class="product-container">
+          <div class="image-wrapper">
+            <img src="images/ultrathin.svg" alt="SUMIMASEN UTLRA THIN" >
           </div>
-          <div class="desc-wrapper">
-            <h3 class="item-title lg:text-left">Ultra Thin</h3>
-            <p class="hidden lg:flex text-left lg:text-left 2xl:text-left">Extra thin as if you are not wearing a condom </p>
+          <div class="image-wrapper">
+            <img src="images/cool-box.svg" alt="SUMIMASEN COOL" >
           </div>
-        </div>
-        <!-- 2nd Row -->
-        <div class="item-container lg:flex-row-reverse lg:space-x-reverse lg:space-x-8">
-          <div class="image-wrapper justify-start">
-           <img src="images/ultrathin.svg" alt="" class="size-2/3">
+          <div class="image-wrapper">
+            <img src="images/dotted-box.svg" alt="SUMIMASEN DELAY" >
           </div>
-            <div class="desc-wrapper lg:mr-4">
-            <h3 class="item-title lg:text-right">Cool</h3>
-          <p class="hidden lg:flex text-center lg:text-right">Feel the sensation of Mint</p>
+          <div class="image-wrapper">
+            <img src="images/delay-box.svg" alt="SUMIMASEN DOTTED" >
           </div>
         </div>
-        <!-- 3 Row -->
-        <div class="item-container lg:flex-row lg:space-x-4">
-          <div class="image-wrapper justify-end">
-            <img src="images/ultrathin.svg" alt="" class="size-2/3">
-          </div>
-          <div class="desc-wrapper">
-            <h3 class="item-title lg:text-left">Delay</h3>
-            <p class="hidden lg:flex text-center lg:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi neque, dignissimos ratione modi inventore sint corrupti fugiat. Tenetur eius, veniam voluptatum voluptates accusantium illo modi eum explicabo aut sint ea.</p>
-          </div>
-        </div>
-        <!-- 4 Row -->
-        <div class="item-container lg:flex-row-reverse lg:space-x-reverse">
-          
-          <div class="image-wrapper justify-start">
-           <img src="images/ultrathin.svg" alt="" class="size-2/3">
-          </div>
-            <div class="desc-wrapper lg:mr-4">
-            <h3 class="item-title lg:text-right">Dotted</h3>
-          <p class="hidden lg:flex text-center lg:text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi neque, dignissimos ratione modi inventore sint corrupti fugiat. Tenetur eius, veniam voluptatum voluptates accusantium illo modi eum explicabo aut sint ea.</p>
-          </div>
-        </div>
-        
-          
       </div>
     </section>
+    <!-- Features -->
+    <section id="features" class="pt-12">
+      <!-- Features Container -->
+       <div class="container mx-auto px-6 pb-14 lg:pb-32">
+        <div class="flex flex-col justify-around space-y-16 text-center md:flex-row md:space-y-0">
+          <!-- item 3 -->
+          <div class="item-container">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/extrasafe-icon.svg" alt="" class="size-full">
+            </div>
+            <h3 class="feature-desc">Extra Safe</h3>
+           </div>
+          <!-- item 1 -->
+           <div class="item-container">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/certified-icon.svg" alt="" class="size-full">
+            </div>
+            <h3 class="feature-desc">ISO & AKL Certified</h3>
+           </div>
+            
+           <!-- item 2 -->
+           <div class="item-container">
+            <div class="flex items-center justify-center h-24 mb-6">
+              <img src="images/natural-icon.svg" alt="" class="size-full">
+            </div>
+            <h3 class="feature-desc">Natural Latex Color</h3>
+           </div>
+          
+        </div>
+       </div>
+    </section>
 
+    <!-- About Us -->
+    <section id="aboutus" class="pt-8">
+      <!-- Container -->
+      <div class="container mx-auto px-6 space-y-10">
+        <!-- <h3 class="text-center text-4xl font-semibold lg:text-6xl">About Us</h3> -->
+        <div class="flex flex-col lg:flex-row lg:space-x-8 items-center">
+          <!-- image -->
+            <img src="images/mascot-fly.png" alt="" class="size-[50%] lg:size-1/3">
+          <!-- description -->
+           <div class="text-center lg:text-left">
+            <p class="text-2xl leading-9">PT SUMIMASEN TETRAJAYA INDONESIA is a importer and distributor of high-quality condoms dedicated to promoting safe and responsible sexual health practices. With a commitment to innovation, quality, and accessibility, SUMIMASEN Condoms strives to provide individuals with reliable protection and peace of mind. We strive to educate the importance of safety and health precautions in sexual intercourse that is approachable and the most fun possible way to reach young generations to learn more about condoms and other contraception that is no longer a taboo topic to talk about.</p>
+           </div>
+        </div>
+      </div>
+    </section>
     <footer class="py-16">
         <!-- Footer Flex Container -->
         <div
@@ -136,20 +154,20 @@
         >
           <!-- Social Container -->
           <div class="flex space-x-10">
-            <a href="#">
-              <img src="images/icon-shopee.svg" alt="" class="h-6 ficon" />
+            <a href="https://s.shopee.co.id/AKGSwFHnL3" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-shopee.svg" alt="icon-shopee" class="h-6 ficon" />
             </a>
-            <a href="#">
-              <img src="images/icon-twitter.svg" alt="" class="h-6 ficon" />
+            <a href="https://x.com/sumimasen_id" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-twitter.svg" alt="icon-twitter" class="h-6 ficon" />
             </a>
-            <a href="#">
-              <img src="images/icon-instagram.svg" alt="" class="h-6 ficon" />
+            <a href="https://www.instagram.com/sumimasen_id" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-instagram.svg" alt="icon-instagram" class="h-6 ficon" />
             </a>
-            <a href="#">
-              <img src="images/icon-tiktok.svg" alt="" class="h-6 ficon" />
+            <a href="https://tiktok.com/@sumimasen_id" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-tiktok.svg" alt="icon-tiktok" class="h-6 ficon" />
             </a>
-            <a href="#">
-              <img src="images/icon-whatsapp.svg" alt="" class="h-6 ficon" />
+            <a href="https://wa.me/+6285179686686" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-whatsapp.svg" alt="whatsapp" class="h-6 ficon" />
             </a>
           </div>
           <!-- Logo-cropped/Menu Container -->
