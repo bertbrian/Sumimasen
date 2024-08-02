@@ -1346,6 +1346,10 @@ body{
     flex-direction: column;
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
@@ -1380,6 +1384,18 @@ body{
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:pb-32 {
