@@ -9,6 +9,7 @@
     <link rel="shortcut icon" type="image/png" href="images/mascot.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
     <title>SUMIMASEN INDONESIA</title>
 </head>
 <body class="overflow-x-hidden">
@@ -78,8 +79,65 @@
               </div>
          </div>
     </section>
+    <!-- Carousel -->
+     <section id="carousel" class="lg:hidden">
+      <div class="w-full rounded-lg shadow-md">
+        <div data-hs-carousel='{
+            "loadingClasses": "opacity-0"
+          }' class="relative">
+          <div class="hs-carousel relative overflow-hidden w-full min-h-64 bg-gray-400 rounded-lg">
+            <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-100">
+              <div class="hs-carousel-slide">
+                <div class="flex justify-center h-full p-6 bg-gray-400">
+                    <img src="images/ultrathin.svg" alt="SUMIMASEN UTLRA THIN" id="image1">
+                </div>
+              </div>
+              <div class="hs-carousel-slide">
+                <div class="flex justify-center h-full p-6 bg-gray-500">
+                    <img src="images/cool-box.svg" alt="SUMIMASEN COOL" id="image2">
+                </div>
+              </div>
+              <div class="hs-carousel-slide">
+                <div class="flex justify-center h-full p-6 bg-gray-600">
+                    <img src="images/dotted-box.svg" alt="SUMIMASEN DELAY" id="image3">
+                </div>
+              </div>
+              <div class="hs-carousel-slide">
+                <div class="flex justify-center h-full p-6 bg-gray-400">
+                    <img src="images/delay-box.svg" alt="SUMIMASEN DOTTED" id="image4">
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+            <span class="text-2xl" aria-hidden="true">
+              <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"></path>
+              </svg>
+            </span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button type="button" class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+            <span class="sr-only">Next</span>
+            <span class="text-2xl" aria-hidden="true">
+              <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </span>
+          </button>
+      
+          <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
+            <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+            <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+            <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+            <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 size-3 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+          </div>
+        </div>
+      </div>
+     </section>
     <!-- Products -->
-    <section id="products" class="lg:pt-14">
+    <section id="products" class="hidden lg:flex lg:pt-14">
       <!-- Container -->
       <div class="container mx-auto px-6 pb-14 lg:pb-32 space-y-10">
         <h3 class="text-center text-4xl font-semibold lg:text-6xl">Products</h3>
@@ -145,7 +203,7 @@
             <div class="flex flex-col justify-center items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3 lg:justify-start">
               <!-- image -->
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABL0lEQVR4nLXWsUpDMRTG8aqIQ/sk4uB8q3ToIoJTEamigi9ix26+gYv3HQRHKw61UNx0s0rbSXyEvwQyHMIx5qT3fpDl8t38IAkhjUZCgCZwAZTAyI/Sf2umzJGCnAJL/s4S6K+KDEjPdS5yhj19K9KKLNfcDy0L0575TQ7zARSiUwAzpXdugdyJClMovbbSKy3QU/DzV6Q7D7qPFugh3JdIdxF07y3QjbIkbaW3r/SGFkibYCYxYA/4VHq7FmgNeFcm+e94j5MRgV1hz1EOtAG8GZCJWwkzlHENHWQhHloHXhOQ52xEYL0EqFsF5E7gOIKMVkYEdhiBOpVBHpsqyEuliIcuFeikDmgL+BHIN7BZOeSxOwHd1oJ46FhAvTqhHQFt1wm5h6S709wwPRx/AfG72z8GzlP5AAAAAElFTkSuQmCC">
-              <p>Cengkareng, West Jakarta, 11730</p>
+              <p>Jakarta, Indonesia</p>
             </div>
             <!-- Telp -->
              <!-- Location -->
