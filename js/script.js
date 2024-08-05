@@ -16,29 +16,29 @@ function menuclicked(){
 }
 
 const gambar1 = document.getElementById('image1')
-gambar1.addEventListener('click', buyImage1)
+gambar1.addEventListener('click', UTClicked)
 
-function buyImage1() {
-    console.log("image1clicked")
+function UTClicked() {
+    console.log("Ultra Thin")
 }
 
 const gambar2 = document.getElementById('image2')
-gambar2.addEventListener('click', buyImage2)
+gambar2.addEventListener('click', CoolClicked)
 
-function buyImage2() {
-    console.log("image2clicked")
+function CoolClicked() {
+    console.log("Cool")
 }
 
 const gambar3 = document.getElementById('image3')
-gambar3.addEventListener('click', buyImage3)
+gambar3.addEventListener('click', DottedClicked)
 
-function buyImage3() {
-    console.log("image3clicked")
+function DottedClicked() {
+    console.log("Dotted")
 }
 
 const gambar4 = document.getElementById('image4')
-gambar4.addEventListener('click', buyImage4)
+gambar4.addEventListener('click', DelayClicked)
 
-function buyImage4() {
-    console.log("image4clicked")
+function DelayClicked() {
+    console.log("Delay")
 }
