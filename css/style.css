@@ -1659,10 +1659,6 @@ body{
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-800\/10:hover {
-  background-color: rgb(31 41 55 / 0.1);
-}
-
 .hover\:bg-gradient-to-l:hover {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
@@ -1690,10 +1686,6 @@ body{
 .focus\:bg-gray-200:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
-.focus\:bg-gray-800\/10:focus {
-  background-color: rgb(31 41 55 / 0.1);
 }
 
 .focus\:outline-none:focus {
@@ -2013,22 +2005,6 @@ body{
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
-  .dark\:shadow-lg {
-    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .dark\:shadow-green-800\/80 {
-    --tw-shadow-color: rgb(22 101 52 / 0.8);
-    --tw-shadow: var(--tw-shadow-colored);
-  }
-
-  .dark\:shadow-orange-800\/80 {
-    --tw-shadow-color: rgb(154 52 18 / 0.8);
-    --tw-shadow: var(--tw-shadow-colored);
-  }
-
   .dark\:hover\:bg-neutral-800:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(38 38 38 / var(--tw-bg-opacity));
@@ -2042,15 +2018,5 @@ body{
   .dark\:focus\:bg-neutral-800:focus {
     --tw-bg-opacity: 1;
     background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-  }
-
-  .dark\:focus\:ring-green-800:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(22 101 52 / var(--tw-ring-opacity));
-  }
-
-  .dark\:focus\:ring-orange-800:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(154 52 18 / var(--tw-ring-opacity));
   }
 }

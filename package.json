@@ -11,7 +11,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@preline/carousel": "^2.4.1",
     "preline": "^2.4.1",
     "tailwindcss": "^3.4.4"
   }
