@@ -558,9 +558,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 390px) {
   .container {
-    max-width: 480px;
+    max-width: 390px;
   }
 }
 
@@ -716,6 +716,16 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -808,6 +818,11 @@ video {
 .size-full {
   width: 100%;
   height: 100%;
+}
+
+.size-3\/4 {
+  width: 75%;
+  height: 75%;
 }
 
 .h-2 {
@@ -948,12 +963,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-20 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(5rem * var(--tw-space-x-reverse));
-  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1314,6 +1323,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1804,7 +1818,7 @@ body{
   display: block;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 390px) {
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1838,6 +1852,11 @@ body{
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:size-1\/2 {
+    width: 50%;
+    height: 50%;
   }
 
   .md\:flex-row {
@@ -1899,6 +1918,16 @@ body{
   .lg\:size-3\/4 {
     width: 75%;
     height: 75%;
+  }
+
+  .lg\:size-48 {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .lg\:size-1\/2 {
+    width: 50%;
+    height: 50%;
   }
 
   .lg\:w-full {
