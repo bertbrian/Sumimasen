@@ -17,12 +17,13 @@
          <div class="flex items-center justify-between my-6 text-white">
           <!-- logo-cropped -->
            <div class="flex items-center justify-center">
-            <img src="./images/mascot.png" alt="mascot picture" class="size-20">
+            <a href="./index.html"><img src="./images/mascot.png" alt="mascot picture" class="size-20"></a>
            </div>           
             <!-- Menu Items -->
-            <div class="hidden items-center space-x-10 uppercase md:flex">
-              <a href="#products" class="tracking-widest hover:text-blue-300 ">Products</a> 
-                <a href="#aboutus" class="tracking-widest hover:text-blue-300">About us</a>
+            <div class="hidden items-center space-x-8 uppercase md:flex">
+              <a href="./index.html#products" class="tracking-widest hover:text-blue-300 ">Products</a> 
+                <a href="./aboutus.html" class="tracking-widest hover:text-blue-300">About us</a>
+                <a href="./certification.html" class="tracking-widest hover:text-blue-300">Certification</a>
                 <a href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F" target="_blank" rel="noopener noreferrer" class="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300  shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2">Become Reseller</a>
             </div>
              <!-- Hamburger Button -->
@@ -38,8 +39,9 @@
         <!-- Mobile Menu -->
          <div id="menu" class="absolute hidden p-6 rounded-lg bg-gray-700 left-6 right-6 top-6">
           <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm z-35">
-            <a href="#products" class="w-full text-center">Products</a>
-            <a href="#aboutus" class="w-full text-center">About us</a>
+            <a href="./index.html#products-mobile" class="w-full text-center">Products</a>
+            <a href="./aboutus.html" class="w-full text-center">About us</a>
+            <a href="./certification.html" class="w-full text-center">Certification</a>
           </div>
          </div>
       
@@ -55,7 +57,7 @@
                 <h1 class="gradient-text text-xl md:text-4xl font-semibold text-center lg:text-5xl uppercase">#BeSafeorBeSorry</h1>
              </div>
             <!-- Button -->
-             <div class="flex flex-col mx-auto space-y-4 p-6 pb-24 md:pb-0 lg:flex-row lg:space-x-12 lg:space-y-0">
+             <div id="products-mobile" class="flex flex-col mx-auto space-y-4 p-6 pb-24 md:pb-0 lg:flex-row lg:space-x-12 lg:space-y-0">
                 <a href="https://www.tokopedia.com/sumimasen-indonesia" target="_blank" rel="noopener noreferrer" class="w-52 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300 shadow-lg shadow-green-500/50 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2">Tokopedia</a>
                 <a href="https://s.shopee.co.id/AKGSwFHnL3" target="_blank" rel="noopener noreferrer" class="w-52 text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-orange-300 shadow-lg shadow-orange-500/50 font-medium rounded-full text-2xl px-5 py-2.5 text-center me-2">Shopee</a>
               </div>
@@ -63,7 +65,7 @@
     </section>
     
     <!-- Carousel -->
-     <section id="carousel" class="lg:hidden mb-12 lg:mb-0">
+     <section id="carousel" class="md:hidden mb-12 md:mb-0">
       <div class="w-full rounded-lg shadow-lg">
         <div data-hs-carousel='{
             "loadingClasses": "opacity-0"
@@ -93,7 +95,7 @@
             </div>
           </div>
       
-          <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-white focus:outline-none rounded-s-lg ">
+          <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-white focus:outline-none rounded-s-lg">
             <span class="text-2xl" aria-hidden="true">
               <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="m15 18-6-6 6-6"></path>
@@ -225,9 +227,9 @@
       </div>
      </section>
     <!-- Products -->
-    <section id="products" class="hidden lg:flex lg:pt-14">
+    <section id="products" class="hidden md:flex md:pt-14">
       <!-- Container -->
-      <div class="container mx-auto px-6 pb-14 lg:pb-32 space-y-10">
+      <div class="container mx-auto px-6 pb-14 md:pb-32 space-y-10">
         <h3 class="text-center text-4xl font-semibold lg:text-6xl">Products</h3>
         <!-- First Row -->
         <div class="product-container">
@@ -282,7 +284,7 @@
     <section id="aboutus" class="pt-8">
       <!-- Container -->
       <div class="container mx-auto px-6 space-y-10">
-        <div class="flex flex-col lg:flex-row lg:space-x-8 items-center">
+        <div class="flex flex-col lg:flex-row lg:space-x-4 items-center justify-evenly">
           <!-- image -->
             <img src="images/mascot-fly.png" alt="" class="size-[50%] lg:size-1/3">
           <!-- description -->
@@ -294,13 +296,17 @@
               <p>Jakarta, Indonesia</p>
             </div>
             <!-- Telp -->
-             <!-- Location -->
             <div class="flex flex-col justify-center items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3 lg:justify-start">
               <!-- image -->
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgElEQVR4nO3asWtdVRgA8K/SJC20SLRIwSFSEXRpirVUpDgU6tDByQSpTi5OaRf3pqC4aCFDAoVuhQqKgzqXUohN+g9IWzOILjUaba22djA/ebzropKcm3eT3nN6f/DGd8j53s053/2+L6LT6XQ6nc5GYAcm8RV+x1U8HaXDQczgJ/91DcNRGjyPaSxZ30dRChzGvHpW8XoU8qjfszErGIuc4QuDWcBQ5Aq/GtzH8YgHYDXb8wCfakae5wGOak5++QG24ZsGg3A6coOpBgOwELnB41We34QPIkc428Dmr2AkcoS9+GOAzV/HaOTMxp+CZTwbucMT1X1ex328EqXAezUzwLejJBhJrAf0zEWJcDwxADd7JbMoES4mBmE6SoSn8HNCAP7EeJQIb9XIAXZFiXAhMQifRImwG98mBmEqSoRDeJAQgL8wESXCO4lPQS9Qx6JEmE0Mwh28GKXBdlxKDMJdvBalwZNVBigxR5isuf4wPsRi1aZrX88Bz+CHxCD0DsaTieuO4vK/vr/YymoznsMt6T7rld7WWG/fGsXZ23gj2gbj+KVGEG7gwP+s8zJ+THj1nmld2R1HqlNfjWvyzD9vkXizKqrU6UWOtbHDvKye3kE6V/2yda20rhWnP1zxva3Tvn8J/dsh9YpsykKrZpb084TUZKkpX0cLM8bZLQzAb9FGeDfxLXJQX0Zb6d8Qm30uTORQVDm3SZvv5SA7Iwc4kVhoreN8ZNh+O9dgAF6NjJsvSwNu/js8FrnCEE4NMKn2fpQAe6rWfN35hBeiJPpDGmerctp65qNU+jNLU2sUSHrzTC9F6fRH+I5Ww5wr1edz7H/Yf1un0+l0OpGHvwGuipF8fe8uGgAAAABJRU5ErkJggg==" class="w-[30px]">
               <p>+62-851-7968-6686</p>
             </div>
-              <p class="text-md w-full px-4 lg:px-0 lg:leading-9 lg:w-full">PT SUMIMASEN TETRAJAYA INDONESIA is a importer and distributor of high-quality condoms dedicated to provide individuals with reliable protection and peace of mind.</p>
+            <!-- Email -->
+            <div class="flex flex-col justify-center items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3 lg:justify-start">
+              <!-- image -->
+              <img src="images/icon-mail.svg" class="w-[28px]">
+              <p>sumimasentetrajayaid@gmail.com</p>
+            </div>
           </div>
         </div>
       </div>

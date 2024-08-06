@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/mascot.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>SUMIMASEN INDONESIA</title>
+</head>
+<body class="overflow-x-hidden">
+    <nav class="container mx-auto p-6">
+        <!-- Flex Container For Nav Items -->
+         <div class="flex items-center justify-between my-6 text-white">
+          <!-- logo-cropped -->
+           <div class="flex items-center justify-center">
+            <a href="./index.html"><img src="./images/mascot.png" alt="mascot picture" class="size-20"></a>
+           </div>           
+            <!-- Menu Items -->
+            <div class="hidden items-center space-x-8 uppercase md:flex">
+              <a href="./index.html#products" class="tracking-widest hover:text-blue-300 ">Products</a> 
+                <a href="./aboutus.html" class="tracking-widest hover:text-blue-300">About us</a>
+                <a href="./certification.html" class="tracking-widest hover:text-blue-300">Certification</a>
+                <a href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F" target="_blank" rel="noopener noreferrer" class="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300  shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2">Become Reseller</a>
+            </div>
+             <!-- Hamburger Button -->
+         <button
+            id="menu-btn"
+            class="z-30 block md:hidden focus:outline-none hamburger"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+         </div>
+        <!-- Mobile Menu -->
+         <div id="menu" class="absolute hidden p-6 rounded-lg bg-gray-700 left-6 right-6 top-6">
+          <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm z-35">
+            <a href="./index.html#products-mobile" class="w-full text-center">Products</a>
+            <a href="./aboutus.html" class="w-full text-center">About us</a>
+            <a href="./certification.html" class="w-full text-center">Certification</a>
+          </div>
+         </div>      
+    </nav>
+
+    <!-- About Us -->
+    <section id="aboutus" class="pt-8">
+      <!-- Container -->
+      <div class="container mx-auto px-6 space-y-10">
+        <h3 class="text-center text-4xl font-semibold lg:text-6xl">About Us</h3>
+        <!-- Row 1 -->
+        <div class="flex flex-col lg:flex-row lg:space-x-8 items-center">
+          <!-- image -->
+            <img src="images/mascot-fly.png" alt="" class="size-[50%] lg:size-1/3">
+            <p class="text-xl text-center w-full px-4 lg:text-left lg:px-0 lg:leading-9 lg:w-full"><b>PT SUMIMASEN TETRAJAYA INDONESIA</b> is a importer and distributor of high-quality condoms dedicated to provide individuals with reliable protection and peace of mind.</p>
+        </div>
+      </div>
+      <!-- Mission -->
+      <div class="container mx-auto px-6 space-y-10">
+        <h3 class="text-center text-4xl font-semibold lg:text-6xl">Mission</h3>
+        <!-- Row 1 -->
+        <div class="flex flex-col lg:flex-row lg:space-x-8 items-center">
+          <!-- image -->
+          <p class="text-xl text-center w-full px-4 lg:text-left lg:px-0 lg:leading-9 lg:w-full">Our mission is to empower individuals to make informed choices about their
+            sexual health by offering a wide range of high-quality condoms that are
+            effective, comfortable, and affordable. We believe that everyone deserves
+            access to reliable protection to enjoy healthy and fulfilling relationships.</p>
+            <img src="images/mascot-fly.png" alt="" class="size-[50%] lg:size-1/3">
+        </div>
+        <div class="">
+            <p>we prioritize quality and
+                safety in all our products. Our condoms
+                undergo rigorous testing to meet
+                international standards for strength,
+                durability, and effectiveness. We use
+                premium materials and advanced
+                manufacturing processes to ensure that
+                each condom provides reliable protection
+                against sexually transmitted infections and
+                unintended pregnancies.</p>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- description -->
+      <div class="container mx-auto px-6 flex flex-col-reverse items-center space-y-8 space-y-reverse text-center lg:text-left text-2xl lg:flex-col lg:space-y-4 lg:items-start pt-12">
+        <!-- Location -->
+        <div class="flex flex-col justify-center items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3 lg:justify-start">
+          <!-- image -->
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABL0lEQVR4nLXWsUpDMRTG8aqIQ/sk4uB8q3ToIoJTEamigi9ix26+gYv3HQRHKw61UNx0s0rbSXyEvwQyHMIx5qT3fpDl8t38IAkhjUZCgCZwAZTAyI/Sf2umzJGCnAJL/s4S6K+KDEjPdS5yhj19K9KKLNfcDy0L0575TQ7zARSiUwAzpXdugdyJClMovbbSKy3QU/DzV6Q7D7qPFugh3JdIdxF07y3QjbIkbaW3r/SGFkibYCYxYA/4VHq7FmgNeFcm+e94j5MRgV1hz1EOtAG8GZCJWwkzlHENHWQhHloHXhOQ52xEYL0EqFsF5E7gOIKMVkYEdhiBOpVBHpsqyEuliIcuFeikDmgL+BHIN7BZOeSxOwHd1oJ46FhAvTqhHQFt1wm5h6S709wwPRx/AfG72z8GzlP5AAAAAElFTkSuQmCC">
+          <p>Jakarta, Indonesia</p>
+        </div>
+        <!-- Telp -->
+         <!-- Location -->
+        <div class="flex flex-col justify-center items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3 lg:justify-start">
+          <!-- image -->
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgElEQVR4nO3asWtdVRgA8K/SJC20SLRIwSFSEXRpirVUpDgU6tDByQSpTi5OaRf3pqC4aCFDAoVuhQqKgzqXUohN+g9IWzOILjUaba22djA/ebzropKcm3eT3nN6f/DGd8j53s053/2+L6LT6XQ6nc5GYAcm8RV+x1U8HaXDQczgJ/91DcNRGjyPaSxZ30dRChzGvHpW8XoU8qjfszErGIuc4QuDWcBQ5Aq/GtzH8YgHYDXb8wCfakae5wGOak5++QG24ZsGg3A6coOpBgOwELnB41We34QPIkc428Dmr2AkcoS9+GOAzV/HaOTMxp+CZTwbucMT1X1ex328EqXAezUzwLejJBhJrAf0zEWJcDwxADd7JbMoES4mBmE6SoSn8HNCAP7EeJQIb9XIAXZFiXAhMQifRImwG98mBmEqSoRDeJAQgL8wESXCO4lPQS9Qx6JEmE0Mwh28GKXBdlxKDMJdvBalwZNVBigxR5isuf4wPsRi1aZrX88Bz+CHxCD0DsaTieuO4vK/vr/YymoznsMt6T7rld7WWG/fGsXZ23gj2gbj+KVGEG7gwP+s8zJ+THj1nmld2R1HqlNfjWvyzD9vkXizKqrU6UWOtbHDvKye3kE6V/2yda20rhWnP1zxva3Tvn8J/dsh9YpsykKrZpb084TUZKkpX0cLM8bZLQzAb9FGeDfxLXJQX0Zb6d8Qm30uTORQVDm3SZvv5SA7Iwc4kVhoreN8ZNh+O9dgAF6NjJsvSwNu/js8FrnCEE4NMKn2fpQAe6rWfN35hBeiJPpDGmerctp65qNU+jNLU2sUSHrzTC9F6fRH+I5Ww5wr1edz7H/Yf1un0+l0OpGHvwGuipF8fe8uGgAAAABJRU5ErkJggg==" class="w-[30px]">
+          <p>+62-851-7968-6686</p>
+        </div>
+        <!-- Email -->
+        <div class="flex flex-col justify-center items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-3 lg:justify-start">
+            <!-- image -->
+            <img src="images/icon-mail.svg" class="w-[28px]">
+            <p>sumimasentetrajayaid@gmail.com</p>
+        </div>
+      </div>
+    </section>    
+    <footer class="py-16">
+        <!-- Footer Flex Container -->
+        <div
+          class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+        >
+          <!-- Social Container -->
+          <div class="flex space-x-10">
+            <a href="https://s.shopee.co.id/AKGSwFHnL3" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-shopee.svg" alt="icon-shopee" class="h-6 ficon" />
+            </a>
+            <a href="https://x.com/sumimasen_id" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-twitter.svg" alt="icon-twitter" class="h-6 ficon" />
+            </a>
+            <a href="https://www.instagram.com/sumimasen_id" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-instagram.svg" alt="icon-instagram" class="h-6 ficon" />
+            </a>
+            <a href="https://tiktok.com/@sumimasen_id" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-tiktok.svg" alt="icon-tiktok" class="h-6 ficon" />
+            </a>
+            <a href="https://wa.me/+6285179686686" target="_blank" rel="noopener noreferrer">
+              <img src="images/icon-whatsapp.svg" alt="whatsapp" class="h-6 ficon" />
+            </a>
+          </div>
+          <!-- Logo-cropped/Menu Container -->
+          <div
+            class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue"
+          >  
+            <small> © 2023, Sumimasen, Inc. All Rights Reserved.</small>
+          </div>
+        </div>
+      </footer>
+      <script src="./node_modules/preline/dist/preline.js"></script>
+</body> 
+</html>
