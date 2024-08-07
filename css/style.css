@@ -1225,6 +1225,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1258,11 +1263,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .pb-12 {
@@ -1852,10 +1852,6 @@ body{
     flex-direction: row;
   }
 
-  .md\:items-start {
-    align-items: flex-start;
-  }
-
   .md\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(3.5rem * var(--tw-space-x-reverse));
@@ -2010,25 +2006,8 @@ body{
     line-height: 1;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-\[30pt\] {
-    font-size: 30pt;
-  }
-
-  .lg\:text-\[17pt\] {
-    font-size: 17pt;
-  }
-
   .lg\:text-\[18pt\] {
     font-size: 18pt;
-  }
-
-  .lg\:text-\[30t\] {
-    color: 30t;
   }
 }
 
