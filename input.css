@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
     //background-color:black;
     @apply bg-gradient-to-tl from-[#0f0c29] via-[#302b63] to-[#24243e] text-white
