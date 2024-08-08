@@ -1200,6 +1200,10 @@ video {
   fill: #000;
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
