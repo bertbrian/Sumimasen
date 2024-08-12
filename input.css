@@ -15,15 +15,25 @@ body{
 }
 
 .slider{
-  @apply w-full border border-red-200 rounded-lg h-[--height]
+  @apply w-full h-64 overflow-hidden my-8 border
 }
 .slider .list {
-  @apply flex
+  @apply flex justify-between relative items-center border h-full;
+  min-width: calc(250px * var(--quantity));
 }
 
-.testimoni {
-  @apply p-6 border w-full
+.item {
+  @apply p-4 absolute left-full w-64 border;
+  animation : AutoRun var(--time) linear infinite;
+  animation-delay: calc(var(--time) / var(--quantity) * (var(--index) - 1) - 5s);
 }
+
+@keyframes AutoRun{
+  to{
+    left: -250px;
+  }
+}
+
 .header-img {
   @apply bg-[url('image/sumimasen-text.svg')]
 }
