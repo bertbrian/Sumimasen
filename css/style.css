@@ -446,6 +446,12 @@ video {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 18pt;
+  }
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -806,6 +812,11 @@ video {
   height: 2rem;
 }
 
+.size-\[40\%\] {
+  width: 40%;
+  height: 40%;
+}
+
 .size-\[50\%\] {
   width: 50%;
   height: 50%;
@@ -819,21 +830,6 @@ video {
 .size-full {
   width: 100%;
   height: 100%;
-}
-
-.size-\[40px\] {
-  width: 40px;
-  height: 40px;
-}
-
-.size-\[30\%\] {
-  width: 30%;
-  height: 30%;
-}
-
-.size-\[40\%\] {
-  width: 40%;
-  height: 40%;
 }
 
 .h-14 {
@@ -862,6 +858,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .w-48 {
@@ -908,14 +908,18 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-150%);
   }
 }
 
-.animate-spin {
-  animation: spin 1s linear infinite;
+.animate-marquee {
+  animation: marquee 15s linear infinite;
 }
 
 .cursor-pointer {
@@ -1250,6 +1254,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1374,18 +1383,6 @@ video {
   text-transform: lowercase;
 }
 
-.leading-4 {
-  line-height: 1rem;
-}
-
-.leading-7 {
-  line-height: 1.75rem;
-}
-
-.leading-8 {
-  line-height: 2rem;
-}
-
 .leading-5 {
   line-height: 1.25rem;
 }
@@ -1504,6 +1501,25 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
+.slider {
+  height: var(--height);
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity));
+}
+
+.slider .list {
+  display: flex;
+}
+
+.testimoni {
+  width: 100%;
+  border-width: 1px;
+  padding: 1.5rem;
+}
+
 .header-img {
   background-image: url('image/sumimasen-text.svg');
 }
@@ -1587,21 +1603,19 @@ body{
 
 .image-wrapper {
   display: flex;
-  width: 13rem;
-  height: 13rem;
 }
 
 @media (min-width: 768px) {
   .image-wrapper {
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
   }
 }
 
 @media (min-width: 1024px) {
   .image-wrapper {
-    width: 24rem;
-    height: 24rem;
+    width: 18rem;
+    height: 18rem;
   }
 }
 
@@ -1879,6 +1893,10 @@ body{
     display: none;
   }
 
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1903,17 +1921,12 @@ body{
     padding-bottom: 0px;
   }
 
-  .md\:pb-32 {
-    padding-bottom: 8rem;
+  .md\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .md\:pt-14 {
     padding-top: 3.5rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-2xl {
@@ -1936,10 +1949,6 @@ body{
     margin-bottom: 2.5rem;
   }
 
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -1952,6 +1961,10 @@ body{
   .lg\:size-1\/4 {
     width: 25%;
     height: 25%;
+  }
+
+  .lg\:w-1\/4 {
+    width: 25%;
   }
 
   .lg\:w-full {
@@ -2005,6 +2018,10 @@ body{
     padding-right: 0px;
   }
 
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:pb-24 {
     padding-bottom: 6rem;
   }
@@ -2035,23 +2052,9 @@ body{
     line-height: 1;
   }
 
-  .lg\:text-\[18pt\] {
-    font-size: 18pt;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:leading-normal {

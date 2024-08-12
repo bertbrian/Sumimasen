@@ -1,14 +1,29 @@
 @tailwind base;
+
+@layer base {
+  h5 {
+    @apply lg:text-[18pt];
+  }
+} 
+
 @tailwind components;
 @tailwind utilities;
-
 
 body{
     //background-color:black;
     @apply bg-gradient-to-tl from-[#0f0c29] via-[#302b63] to-[#24243e] text-white
 }
 
+.slider{
+  @apply w-full border border-red-200 rounded-lg h-[--height]
+}
+.slider .list {
+  @apply flex
+}
 
+.testimoni {
+  @apply p-6 border w-full
+}
 .header-img {
   @apply bg-[url('image/sumimasen-text.svg')]
 }
@@ -30,7 +45,7 @@ body{
 }
 
 .image-wrapper{
-    @apply flex size-52 md:size-80 lg:size-96
+    @apply flex md:size-64 lg:size-72
 }  
 
 .item-title {
