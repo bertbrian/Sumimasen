@@ -15,17 +15,27 @@ body{
 }
 
 .slider{
-  @apply w-full h-64 overflow-hidden my-8 border
+  @apply w-full h-40 overflow-hidden my-8 touch-pan-x
+  
 }
+
+-webkit-scrollbar {
+  display: none;
+}
+
 .slider .list {
-  @apply flex justify-between relative items-center border h-full;
+  @apply flex justify-between relative;
   min-width: calc(250px * var(--quantity));
 }
 
 .item {
-  @apply p-4 absolute left-full w-64 border;
+  @apply p-4 absolute left-full w-64;
   animation : AutoRun var(--time) linear infinite;
-  animation-delay: calc(var(--time) / var(--quantity) * (var(--index) - 1) - 5s);
+  animation-delay: calc(var(--time) / var(--quantity) * (var(--index) - 1) - 40s);
+}
+
+.slider:hover .item{
+  animation-play-state:paused !important
 }
 
 @keyframes AutoRun{

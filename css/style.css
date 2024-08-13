@@ -1485,19 +1485,21 @@ body{
 .slider {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  height: 16rem;
+  height: 10rem;
   width: 100%;
+  --tw-pan-x: pan-x;
+  touch-action: var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom);
   overflow: hidden;
-  border-width: 1px;
+}
+
+-webkit-scrollbar {
+  display: none;
 }
 
 .slider .list {
   position: relative;
   display: flex;
-  height: 100%;
-  align-items: center;
   justify-content: space-between;
-  border-width: 1px;
   min-width: calc(250px * var(--quantity));
 }
 
@@ -1505,10 +1507,13 @@ body{
   position: absolute;
   left: 100%;
   width: 16rem;
-  border-width: 1px;
   padding: 1rem;
   animation : AutoRun var(--time) linear infinite;
-  animation-delay: calc(var(--time) / var(--quantity) * (var(--index) - 1) - 5s);
+  animation-delay: calc(var(--time) / var(--quantity) * (var(--index) - 1) - 40s);
+}
+
+.slider:hover .item{
+  animation-play-state:paused !important
 }
 
 @keyframes AutoRun{
