@@ -15,12 +15,8 @@ body{
 }
 
 .slider{
-  @apply w-full h-40 overflow-hidden my-8 touch-pan-x
+  @apply w-full h-40 overflow-hidden my-8 lg:my-12 lg:mb-14
   
-}
-
--webkit-scrollbar {
-  display: none;
 }
 
 .slider .list {
@@ -29,13 +25,17 @@ body{
 }
 
 .item {
-  @apply p-4 absolute left-full w-64;
+  @apply p-4 absolute left-full w-64 cursor-default select-none ;
   animation : AutoRun var(--time) linear infinite;
   animation-delay: calc(var(--time) / var(--quantity) * (var(--index) - 1) - 40s);
 }
 
-.slider:hover .item{
+.slider:active .item, .slider:hover .item{
   animation-play-state:paused !important
+}
+
+#whattheysay{
+  @apply mt-16 lg:mb-16
 }
 
 @keyframes AutoRun{

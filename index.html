@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/mascot.png">
-    <link rel="stylesheet" href="./css/style.css?5">
-    <script src="./js/script.js?5" defer></script>
+    <link rel="stylesheet" href="./css/style.css?7">
+    <script src="./js/script.js?7" defer></script>
     <title>SUMIMASEN INDONESIA</title>
 </head>
 <body class="overflow-x-hidden">
@@ -40,6 +40,8 @@
          <div id="menu" class="absolute hidden p-6 rounded-lg bg-gray-700 left-6 right-6 top-6">
           <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm z-35">
             <a href="./index.html#products-mobile" class="w-full text-center">Products</a>
+            <a href="./index.html#review" class="w-full text-center">Review</a>
+            <a href="./index.html#whattheysay" class="w-full text-center">What they say</a>
             <a href="./aboutus.html" class="w-full text-center">About us</a>
             <a href="./certification.html" class="w-full text-center">Certification</a>
           </div>
@@ -234,7 +236,7 @@
     <!-- Products -->
     <section id="products" class="hidden md:flex md:pt-14">
       <!-- Container -->
-      <div class="container mx-auto px-6 pb-14 md:pb-16 lg:pb-10 space-y-10">
+      <div class="container mx-auto px-6 pb-14 md:pb-16 space-y-10 lg:pb-24">
         <h3 class="text-center text-4xl font-semibold lg:text-6xl">Products</h3>
         <!-- First Row -->
         <div class="product-container">
@@ -255,44 +257,49 @@
     </section>
 
     <!-- Video -->
-    <section>
+    <section id="review">
+    <h3 class="text-center text-4xl font-semibold lg:text-6xl">Review</h3>
+
       <div class="overflow-hidden py-6" >
-        <video class="mx-auto w-4/5 md:w-2/5 lg:w-1/4" autoplay muted loop controls>
+
+        <video class="mx-auto w-4/5 md:w-2/5 lg:w-1/4 rounded-lg" autoplay muted loop controls>
           <source src="video/sumimasen_video.mp4" type="video/mp4">
         </video>
       </div>
     </section>
 
   <!-- Preview -->
-   <div class="slider" style="
-   --quantity:5;
-   --time: 40s;
-   ">
+   <section id="whattheysay">
+    <h3 class="text-center text-4xl font-semibold lg:text-6xl">What they say</h3>
+    <div class="slider" style="
+    --quantity:5;
+    --time: 40s;
+    ">
+      <div class="list">
+        <div class="item" style="--index: 1">
+          <b>awalnya beli krna kemasanny lucu aesthetic bgtt tp wlaupun tipis ternyt super fleksibel bgtt</b>
+          <p>- j****e</p>
+        </div>
+        <div class="item" style="--index: 2">
+          <b>varian favorite nih, tipis banget. Packaging bubble wrap, di dus juga masih ada plastik jadi pengiriman bener2 aman.</b>
+          <p>- w****a</p>
+        </div>
+        <div class="item" style="--index: 3">
+          <b>mantep tipis bener udh berapa kali beli, ga gampang sobek main nya santuy ae</b>
+          <p>- r*****3</p>
+        </div>
+        <div class="item" style="--index: 4">
+          <b>pengiriman cepat, terus privasi bener2 aman. Ga kalah sama toko sebelah jg ini, mantappp</b>
+          <p>- d*****y</p>
+        </div>
+        <div class="item" style="--index: 5">
+          <b>Min makasih ya kmrn aku udh nyoba sma pacarku katanya enak bgt, aku jg enak pas masuknya lumayan berasa jg</b>
+          <p>- L***y</p>
+        </div>
+      </div>
 
-    <div class="list">
-      <div class="item" style="--index: 1">
-        <b>awalnya beli krna kemasanny lucu aesthetic bgtt tp wlaupun tipis ternyt super fleksibel bgtt</b>
-        <p>- j****e</p>
-      </div>
-      <div class="item" style="--index: 2">
-        <b>varian favorite nih, tipis banget. Packaging bubble wrap, di dus juga masih ada plastik jadi pengiriman bener2 aman.</b>
-        <p>- w****a</p>
-      </div>
-      <div class="item" style="--index: 3">
-        <b>mantep tipis bener udh berapa kali beli, ga gampang sobek main nya santuy ae</b>
-        <p>- r*****3</p>
-      </div>
-      <div class="item" style="--index: 4">
-        <b>pengiriman cepat, terus privasi bener2 aman. Ga kalah sama toko sebelah jg ini, mantappp</b>
-        <p>- d*****y</p>
-      </div>
-      <div class="item" style="--index: 5">
-        <b>Min makasih ya kmrn aku udh nyoba sma pacarku katanya enak bgt, aku jg enak pas masuknya lumayan berasa jg</b>
-        <p>- L***y</p>
-      </div>
     </div>
-
-   </div>
+  </section>
     <!-- Features -->
     <section id="features" class="pt-8">
       <!-- Features Container -->
@@ -323,9 +330,6 @@
           
         </div>
        </div>
-    </section>
-    <section id="review">
-      
     </section>
     <!-- Button Reseller -->
      <section class="pt-8">

@@ -1282,10 +1282,6 @@ video {
   padding-bottom: 6rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1487,13 +1483,14 @@ body{
   margin-bottom: 2rem;
   height: 10rem;
   width: 100%;
-  --tw-pan-x: pan-x;
-  touch-action: var(--tw-pan-x) var(--tw-pan-y) var(--tw-pinch-zoom);
   overflow: hidden;
 }
 
--webkit-scrollbar {
-  display: none;
+@media (min-width: 1024px) {
+  .slider {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+  }
 }
 
 .slider .list {
@@ -1507,13 +1504,27 @@ body{
   position: absolute;
   left: 100%;
   width: 16rem;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding: 1rem;
   animation : AutoRun var(--time) linear infinite;
   animation-delay: calc(var(--time) / var(--quantity) * (var(--index) - 1) - 40s);
 }
 
-.slider:hover .item{
+.slider:active .item, .slider:hover .item{
   animation-play-state:paused !important
+}
+
+#whattheysay {
+  margin-top: 4rem;
+}
+
+@media (min-width: 1024px) {
+  #whattheysay {
+    margin-bottom: 4rem;
+  }
 }
 
 @keyframes AutoRun{
@@ -2018,10 +2029,6 @@ body{
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .lg\:pb-10 {
-    padding-bottom: 2.5rem;
   }
 
   .lg\:pb-24 {
