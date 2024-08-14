@@ -65,7 +65,7 @@ body{
 }
 
 .image-wrapper{
-    @apply flex md:size-64 lg:size-72
+    @apply flex md:size-64 lg:size-72 cursor-pointer
 }  
 
 .item-title {
