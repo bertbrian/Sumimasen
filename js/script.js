@@ -1,6 +1,6 @@
 const btn = document.getElementById('menu-btn')
 const menu = document.getElementById('menu')
-
+const btncampaign = document.getElementById('campaign')
 
 btn.addEventListener('click', navToggle)
 menu.addEventListener('click', menuclicked)
@@ -15,3 +15,7 @@ function navToggle() {
 function menuclicked(){
     navToggle()
 }
+
+window.addEventListener('load', () => {
+    btncampaign.click();
+})
