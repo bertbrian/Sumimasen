@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/icons/site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css?13" />
+    <script src="./js/script.js?13" defer></script>
+    <title>SUMIMASEN INDONESIA</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <nav class="container mx-auto p-6">
+      <!-- Flex Container For Nav Items -->
+      <div class="flex items-center justify-between my-0 text-white lg:my-6">
+        <!-- logo-cropped -->
+        <div class="flex items-center justify-center">
+          <a href="./#"
+            ><img
+              src="./images/mascot.png"
+              alt="mascot picture"
+              class="size-20"
+          /></a>
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden items-center space-x-8 uppercase md:flex">
+          <a href="./#products" class="tracking-widest hover:text-blue-300"
+            >Products</a
+          >
+          <a href="./aboutus.html" class="tracking-widest hover:text-blue-300"
+            >About us</a
+          >
+          <a
+            href="./certification.html"
+            class="tracking-widest hover:text-blue-300"
+            >Certification</a
+          >
+          <a href="./funwalk.html" class="tracking-widest hover:text-blue-300"
+            >Fun Walk</a
+          >
+          <a
+            href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300 shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2"
+            >Become Reseller</a
+          >
+        </div>
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="z-30 block md:hidden focus:outline-none hamburger"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-gray-700 left-6 right-6 top-6"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm z-35"
+        >
+          <a href="./funwalk.html" class="w-full text-center">Fun Walk</a>
+          <a href="./#products-mobile" class="w-full text-center">Products</a>
+          <a href="./#review" class="w-full text-center">Review</a>
+          <a href="./#whattheysay" class="w-full text-center">What they say</a>
+          <a href="./aboutus.html" class="w-full text-center">About us</a>
+          <a href="./certification.html" class="w-full text-center"
+            >Certification</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Fun Walk -->
+    <section id="funwalk" class="pt-4 lg:pt-12">
+      <h3
+        class="text-center text-xl font-semibold pb-12 lg:text-4xl lg:pb-12 capitalize"
+      >
+        Guideline pengambilan jersey fun walk
+      </h3>
+
+      <!-- Features Container -->
+      <div class="container mx-auto px-6 pb-8">
+        <div class="flex justify-around text-center">
+          <ul class="list-decimal text-left">
+            <li>
+              Peserta yang belum menerima Jersey Fun Walk diharapkan agar datang
+              lebih awal untuk menghindari antrian panjang pengambilan Jersey.
+            </li>
+            <li>
+              Pengambilan Jersey akan dimulai pukul 05.15 WIB di tenda
+              pengambilan Jersey (dekat Panggung acara).
+            </li>
+            <li>
+              Pengambilan Jersey akan dibagi menjadi 4 Grup berdasarkan huruf
+              depan nama peserta yang terdaftar, harap untuk mengambil Jersey di
+              meja Grup yang sesuai dengan Huruf awal nama peserta terdaftar dan
+              harap siapkan nomor Hp terdaftar untuk verifikasi pengambilan.
+            </li>
+            <br />
+            Grup 1 : A B C D
+            <br />Grup 2 : E F G H I J K
+            <br />Grup 3 : L M N O P Q R
+            <br />Grup 4 : S T U V W X Y Z
+            <br />
+            *contoh: Kevin (huruf awal K, mengambil di meja Grup 2)
+            <br /><br />
+            <li>
+              Panitia tidak menyediakan tempat pergantian Jersey. Pergantian
+              Jersey dapat dilakukan di toilet Mall FX Sudirman. Untuk peserta
+              wanita disarankan untuk memakai Manset (pakaian dalaman olahraga)
+              agar memudahkan pergantian Jersey di tempat.
+            </li>
+            <li>
+              Nama peserta yang tidak terdaftar di list kami, mohon maaf tidak
+              bisa mendapatkan Jersey Fun Walk. Bagi yang tidak mendapatkan
+              Jersey tetap diperbolehkan mengikuti Fun Walk.
+            </li>
+            <li>
+              Panggung Acara terletak di samping depan Mall FX Sudirman (di
+              depan Gapura Gelora Bung Karno kawasan GBK pintu 5).
+            </li>
+            <li>
+              Peserta yang membawa kendaraan pribadi disarankan untuk parkir di
+              Mall FX Sudirman.
+            </li>
+            <li>
+              Acara akan dimulai Pukul 06.30 WIB, harap datang tepat waktu.
+            </li>
+            <li>
+              Saat Fun Walk dimulai, peserta berjalan santai di sebelah kiri
+              jalan agar tidak mengganggu warga lain yang sedang melakukan
+              running/lari disebelah kanan.
+            </li>
+            <li>
+              Mohon agar tetap menjaga kebersihan dengan membuang sampah pada
+              tempatnya.
+            </li>
+            <li>
+              Jika ada hal yang ingin ditanyakan dan diperlukan bantuan harap
+              menghubungi Panitia (menggunakan Jersey Fun Walk berwarna biru
+              dongker).
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="listpeserta" class="pt-4 lg:pt-12">
+      <h3 class="text-center text-4xl font-semibold pb-6 lg:text-5xl lg:pb-12">
+        List Peserta
+      </h3>
+      <!-- Features Container -->
+      <div class="container mx-auto px-6 pb-14 lg:pb-32">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-around text-center"
+        >
+          <p>Abdul Kadir Zaelani</p>
+          <p>Abilitama Elfonda Daffa</p>
+          <p>Achmad Satiri Gunawan</p>
+          <p>Ade Cahyaning Pangesti</p>
+          <p>Adelyta</p>
+          <p>Aditya</p>
+          <p>Afifah Aisyafitri</p>
+          <p>AFRI RUBIAN</p>
+          <p>Agung Setyo Wahyudi</p>
+          <p>Ahmad Sobari</p>
+          <p>Ahmad sopian</p>
+          <p>Akhsal Arya Syahputra</p>
+          <p>Al Huzairo</p>
+          <p>Alam Muhamad Ramdan</p>
+          <p>Albert Hayanto</p>
+          <p>ALBERT PASA</p>
+          <p>Aldi saputro</p>
+          <p>Aldila Boyda M</p>
+          <p>Alexander Wijaya</p>
+          <p>Alfarizi Wira Yudha</p>
+          <p>Alfi</p>
+          <p>Amelia Hakim</p>
+          <p>Amiruddin</p>
+          <p>Andi Alfian Asa Nusantara</p>
+          <p>Andre Susanto</p>
+          <p>Andreas Putra Purba</p>
+          <p>Andri Sutrisna</p>
+          <p>Anggi Zahra Al Husna</p>
+          <p>Anita Sidiqqa</p>
+          <p>Anna stefany</p>
+          <p>Anzel</p>
+          <p>Apnesia Feronika</p>
+          <p>Apriel Mendrofa</p>
+          <p>APRILIA FRANSISKA</p>
+          <p>Ardhi Putra</p>
+          <p>Ardi Novrianto</p>
+          <p>Ardian Situmorang</p>
+          <p>Ardiansyah</p>
+          <p>Arief Nur Zaid</p>
+          <p>ARISWANDI</p>
+          <p>Astri sutriani</p>
+          <p>Athalla Arfa Deannova</p>
+          <p>Aulia Nissa</p>
+          <p>Aulia Utami</p>
+          <p>AYU AGUDTINA</p>
+          <p>Ayu Puspa Amalia</p>
+          <p>Ayyash</p>
+          <p>Azzalea Ufaira</p>
+          <p>Bachtiar</p>
+          <p>Bagus Hariyanto</p>
+          <p>Bianca Kayla</p>
+          <p>Bimo dwi wijaya</p>
+          <p>Bun Fui</p>
+          <p>Carminah</p>
+          <p>Carmudi</p>
+          <p>Caroline Aprillia</p>
+          <p>Charley Lemanwono</p>
+          <p>cica suryani</p>
+          <p>Cindy idelia</p>
+          <p>DAELIMI</p>
+          <p>Danang Choirul Umam</p>
+          <p>David</p>
+          <p>DAVID TEO</p>
+          <p>Deas praswanti</p>
+          <p>Debi Purnama</p>
+          <p>Dede Ideng</p>
+          <p>Dede Nasrudin</p>
+          <p>Dedi Yanto</p>
+          <p>Desi Rahmawita</p>
+          <p>Desi Tastawika</p>
+          <p>Desmanda Angga Saputra</p>
+          <p>Dessy Siahaan</p>
+          <p>Detia Pirussia</p>
+          <p>Devita</p>
+          <p>Dewi Astyna Purba</p>
+          <p>Dian Oktaviani</p>
+          <p>Dicky Farida</p>
+          <p>Dicky Septiana</p>
+          <p>Dicky Septiana</p>
+          <p>Dimas Ramadhan Adikusumo</p>
+          <p>Dora</p>
+          <p>Dwi Rieka Silviana</p>
+          <p>egi taufik</p>
+          <p>Eko Prasetyo</p>
+          <p>Eldira Nurfauzan</p>
+          <p>Enda</p>
+          <p>Erick Marthin Agustinus</p>
+          <p>Eris</p>
+          <p>Ernawati 1</p>
+          <p>Ernawati 2</p>
+          <p>Ernawati 3</p>
+          <p>Ernawati 4</p>
+          <p>Evi Nurhayati</p>
+          <p>Fachrul Azmi Nasution</p>
+          <p>Fahrajad Kafabihi</p>
+          <p>Fara</p>
+          <p>Fardi</p>
+          <p>Farhan Yusuf</p>
+          <p>Fatia islami</p>
+          <p>Fauzan Azimah</p>
+          <p>Fauzi Ridwan</p>
+          <p>felicia austin</p>
+          <p>Fennaidy Nastojo</p>
+          <p>fenti D iryanti</p>
+          <p>Fiki</p>
+          <p>Fikri Ramadhan</p>
+          <p>Filza Ramadhan</p>
+          <p>Fina</p>
+          <p>Fintari</p>
+          <p>Florentine</p>
+          <p>FONG LAI MOY</p>
+          <p>Fui Kiun</p>
+          <p>Fui Tan</p>
+          <p>Fyan</p>
+          <p>Gerald</p>
+          <p>Ghaida aldawiyah</p>
+          <p>Gilang caesar yudhan shia</p>
+          <p>Giyan Triwibowo</p>
+          <p>Gold Giant</p>
+          <p>Grecya Simamora</p>
+          <p>Gusrido Saputra</p>
+          <p>Halimah tussadiyah</p>
+          <p>Halimah tussadiyah</p>
+          <p>Hanif Mukti Raharjo</p>
+          <p>Harja</p>
+          <p>Hasan halim</p>
+          <p>Hayumi Febyan Chealsiyana</p>
+          <p>Henny Samadikun</p>
+          <p>Herni Herawati</p>
+          <p>Heru Dwi Saputra</p>
+          <p>Hikmah setia wati</p>
+          <p>Hilmi Dauziah</p>
+          <p>Iis Rosmayanti</p>
+          <p>Ika Sartika</p>
+          <p>Ikhwan Maulana</p>
+          <p>ILMAN ANGGI WARDANA</p>
+          <p>Ilyas</p>
+          <p>IMAM FAHREZA</p>
+          <p>Imanuel yos pradana</p>
+          <p>Ina Supriyatna</p>
+          <p>Inaayu</p>
+          <p>Indah Wahyuni</p>
+          <p>INKA ANDIANI</p>
+          <p>Inne Suryadi</p>
+          <p>Ismah Wati</p>
+          <p>Ismail Ghozali</p>
+          <p>Iva Tussholeha</p>
+          <p>IYAN PUTRI</p>
+          <p>Jaerusmanto</p>
+          <p>Jajang</p>
+          <p>jajasetia7@gmail.com</p>
+          <p>Jamaludin</p>
+          <p>JAN FYVEN SITINDAON</p>
+          <p>januar</p>
+          <p>Jasmita</p>
+          <p>Jay</p>
+          <p>Jennyfer</p>
+          <p>Jessica Ganda</p>
+          <p>Jonathan Ganda</p>
+          <p>Kartika</p>
+          <p>Kartina</p>
+          <p>Keanu Mezzofanty Al Kindi</p>
+          <p>Kenzie Guantoro</p>
+          <p>KESI MUNIATI LESTARI</p>
+          <p>Latifah Salsabila</p>
+          <p>Lauren</p>
+          <p>Leonardo Chandra</p>
+          <p>Liliana</p>
+          <p>LILY DHAMMAYANI</p>
+          <p>Livia</p>
+          <p>Lukman Nulhakim</p>
+          <p>Lulu</p>
+          <p>Lusiana Simanjuntak</p>
+          <p>M Muklas</p>
+          <p>M. Nur imam Satriawan</p>
+          <p>M.baihaki</p>
+          <p>M.IQBAL</p>
+          <p>Macharani noor</p>
+          <p>Mahadi Nugroho</p>
+          <p>Margareta Srilestari</p>
+          <p>Marni</p>
+          <p>Martinus Dias Hadianto</p>
+          <p>Maryani</p>
+          <p>mas DAR</p>
+          <p>Mawah</p>
+          <p>Meidy Amalliatiara Putri</p>
+          <p>Meli</p>
+          <p>mella indriyani</p>
+          <p>Mery Chrystina</p>
+          <p>Miasih</p>
+          <p>Mochammad Syafiie</p>
+          <p>Mohamad guntur sudarman</p>
+          <p>Mohammad Ilmi Al Hazmi</p>
+          <p>Moicin</p>
+          <p>Monica Juliana</p>
+          <p>Muhamad Nur Ardhy</p>
+          <p>Muhammad Farhan</p>
+          <p>Muhammad Jaza Al Aufa</p>
+          <p>Muhammad Khusnan Gufron</p>
+          <p>Muhammad Nashir</p>
+          <p>Muhammad Reza Syahfahlevi</p>
+          <p>Muhammad Rizky Septiana</p>
+          <p>Mulia Tarmizie</p>
+          <p>Mutia Vicky Nurhidayati</p>
+          <p>MUTIARA</p>
+          <p>Naif</p>
+          <p>Najla Ellysia</p>
+          <p>NANIK PUJIATI</p>
+          <p>Narita Variansi</p>
+          <p>Natalina Simarmata</p>
+          <p>Nia kurniasih</p>
+          <p>Nina karina</p>
+          <p>nindi kurniawati</p>
+          <p>Nurhayati</p>
+          <p>Nurhayati</p>
+          <p>Nurpi</p>
+          <p>Nurul Alviana Nabillah</p>
+          <p>Octaviany Nadian</p>
+          <p>Oktaviana</p>
+          <p>Olivia</p>
+          <p>Oman Firmansyah</p>
+          <p>Osi budi</p>
+          <p>Pebriana permana</p>
+          <p>Prawita Simarmata</p>
+          <p>Puji Siswanto</p>
+          <p>putri evy</p>
+          <p>Rahma</p>
+          <p>Rahma Dwi Yuliani</p>
+          <p>Rai Husnul Arifah</p>
+          <p>Rai Husnul Arifah</p>
+          <p>Raihan Isnaini</p>
+          <p>Raimon</p>
+          <p>Rangga kadri</p>
+          <p>Rasam</p>
+          <p>Ratna</p>
+          <p>RATNA TEO</p>
+          <p>Refi Firman Agusti</p>
+          <p>Refi Firman Agusti</p>
+          <p>Regina Joscha Octavia</p>
+          <p>RENGGA PANDUWINATA</p>
+          <p>Restiana ria ambono</p>
+          <p>Ria Rizki</p>
+          <p>Riko Setiawan</p>
+          <p>RISDIANTI</p>
+          <p>RISKI SIRMA BUDI</p>
+          <p>Ristia</p>
+          <p>Riwan</p>
+          <p>Riza Luzan</p>
+          <p>Rizal Aprizal</p>
+          <p>rosalia.widiastutik58@gmail.com</p>
+          <p>Rusnadi</p>
+          <p>Ryuzie Guantoro</p>
+          <p>Sadam</p>
+          <p>Safei</p>
+          <p>Saiful</p>
+          <p>Salman Farisi</p>
+          <p>Salsabilla elvetta wati</p>
+          <p>Sania Desta Sari</p>
+          <p>Sarah mardiana</p>
+          <p>Sartika</p>
+          <p>Selly</p>
+          <p>Serly Irawati</p>
+          <p>Seviana</p>
+          <p>Silvi aflini</p>
+          <p>Silvika Ivana Sari Aritonang</p>
+          <p>Siti Kulsum</p>
+          <p>Siti Mutmainah</p>
+          <p>Siti rohamni</p>
+          <p>Siti Rohimah</p>
+          <p>Siti Solechah</p>
+          <p>Sofyan efendi</p>
+          <p>Stephanie</p>
+          <p>Steven</p>
+          <p>Suci</p>
+          <p>Sudiyanto</p>
+          <p>Suhendra Sugiyanto</p>
+          <p>Sulastri</p>
+          <p>Sumintra</p>
+          <p>Sumiyati</p>
+          <p>Supardi</p>
+          <p>Supramto</p>
+          <p>SURNI</p>
+          <p>Susanto</p>
+          <p>Susi Mulyani</p>
+          <p>Suwandi</p>
+          <p>Swandi Juslian</p>
+          <p>SYAHRUL ARI DHONA</p>
+          <p>Syamby Herdiansyah</p>
+          <p>Syamby Herdiansyah</p>
+          <p>Syamsudin</p>
+          <p>Tamam</p>
+          <p>Tebeng</p>
+          <p>Tetik</p>
+          <p>Theendy</p>
+          <p>Tria Nurlaela</p>
+          <p>Tusilawati</p>
+          <p>TYAS</p>
+          <p>Umroh</p>
+          <p>Vina paramita</p>
+          <p>Vina Yuliana Wulandari</p>
+          <p>Vincent</p>
+          <p>Wahyuni Aprianti</p>
+          <p>Waudi</p>
+          <p>Wibowo</p>
+          <p>Widyadara Paramita</p>
+          <p>Widyanto</p>
+          <p>Winda</p>
+          <p>Winda Latifah</p>
+          <p>Wong Irwan Wijaya</p>
+          <p>Yayan muryana</p>
+          <p>Yayu Diana</p>
+          <p>Yeni fitrianingsih</p>
+          <p>Yenny suherni Yakub</p>
+          <p>Yenti lasroha</p>
+          <p>Yogi (Yenti lasroha)</p>
+          <p>Yogi Caka Putra</p>
+          <p>Yulie</p>
+          <p>YUYUN GUSTIA NINGSIH</p>
+          <p>Zahra Khaila Maulani</p>
+          <p>Zila</p>
+        </div>
+      </div>
+      <!-- Image -->
+      <img
+        src="images/mascot-strong.png"
+        alt=""
+        class="mx-auto size-[40%] lg:size-1/4"
+      />
+    </section>
+
+    <footer class="py-16">
+      <!-- Footer Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+      >
+        <!-- Social Container -->
+        <div class="flex space-x-10">
+          <a
+            href="https://s.shopee.co.id/AKGSwFHnL3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-shopee.svg"
+              alt="icon-shopee"
+              class="h-6 ficon"
+            />
+          </a>
+          <a
+            href="https://x.com/sumimasen_id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-twitter.svg"
+              alt="icon-twitter"
+              class="h-6 ficon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/sumimasen_id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-instagram.svg"
+              alt="icon-instagram"
+              class="h-6 ficon"
+            />
+          </a>
+          <a
+            href="https://tiktok.com/@sumimasen_id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-tiktok.svg"
+              alt="icon-tiktok"
+              class="h-6 ficon"
+            />
+          </a>
+          <a
+            href="https://wa.me/+6285179686686"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-whatsapp.svg"
+              alt="whatsapp"
+              class="h-6 ficon"
+            />
+          </a>
+        </div>
+        <!-- Logo-cropped/Menu Container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue"
+        >
+          <small> © 2023, Sumimasen, Inc. All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
