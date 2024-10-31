@@ -1,108 +1,186 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="images/mascot.png">
-    <link rel="stylesheet" href="./css/style.css?8">
-    <script src="./js/script.js?8" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/mascot.png" />
+    <link rel="stylesheet" href="./css/style.css?12" />
+    <script src="./js/script.js?12" defer></script>
     <title>SUMIMASEN INDONESIA</title>
-</head>
-<body class="overflow-x-hidden">
+  </head>
+  <body class="overflow-x-hidden">
     <nav class="container mx-auto p-6">
-        <!-- Flex Container For Nav Items -->
-         <div class="flex items-center justify-between my-0 text-white lg:my-6 ">
-          <!-- logo-cropped -->
-           <div class="flex items-center justify-center">
-            <a href="./index.html"><img src="./images/mascot.png" alt="mascot picture" class="size-20"></a>
-           </div>           
-            <!-- Menu Items -->
-            <div class="hidden items-center space-x-8 uppercase md:flex">
-              <a href="./index.html#products" class="tracking-widest hover:text-blue-300 ">Products</a> 
-                <a href="./aboutus.html" class="tracking-widest hover:text-blue-300">About us</a>
-                <a href="./certification.html" class="tracking-widest hover:text-blue-300">Certification</a>
-                <a href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F" target="_blank" rel="noopener noreferrer" class="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300  shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2">Become Reseller</a>
-            </div>
-             <!-- Hamburger Button -->
-         <button
-            id="menu-btn"
-            class="z-30 block md:hidden focus:outline-none hamburger"
+      <!-- Flex Container For Nav Items -->
+      <div class="flex items-center justify-between my-0 text-white lg:my-6">
+        <!-- logo-cropped -->
+        <div class="flex items-center justify-center">
+          <a href="./index.html"
+            ><img
+              src="./images/mascot.png"
+              alt="mascot picture"
+              class="size-20"
+          /></a>
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden items-center space-x-8 uppercase md:flex">
+          <a
+            href="./index.html#products"
+            class="tracking-widest hover:text-blue-300"
+            >Products</a
           >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
-         </div>
-        <!-- Mobile Menu -->
-         <div id="menu" class="absolute hidden p-6 rounded-lg bg-gray-700 left-6 right-6 top-6">
-          <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm z-35">
-            <a href="./index.html#products-mobile" class="w-full text-center">Products</a>
-            <a href="./aboutus.html" class="w-full text-center">About us</a>
-            <a href="./certification.html" class="w-full text-center">Certification</a>
-          </div>
-         </div>      
+          <a href="./aboutus.html" class="tracking-widest hover:text-blue-300"
+            >About us</a
+          >
+          <a
+            href="./certification.html"
+            class="tracking-widest hover:text-blue-300"
+            >Certification</a
+          >
+          <a
+            href="https://wa.me/+6285179686686?text=Hai%20sumin%2C%20saya%20tertarik%20menjadi%20Reseller%2C%20apa%20saja%20syaratnya%3F%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-48 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-green-300 shadow-lg shadow-green-500/50 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2"
+            >Become Reseller</a
+          >
+        </div>
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="z-30 block md:hidden focus:outline-none hamburger"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-gray-700 left-6 right-6 top-6"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm z-35"
+        >
+          <a href="./index.html#products-mobile" class="w-full text-center"
+            >Products</a
+          >
+          <a href="./aboutus.html" class="w-full text-center">About us</a>
+          <a href="./certification.html" class="w-full text-center"
+            >Certification</a
+          >
+        </div>
+      </div>
     </nav>
     <!-- Certification -->
     <section id="features" class="pt-4 lg:pt-12">
-      <h3 class="text-center text-4xl font-semibold pb-12 lg:text-6xl lg:pb-24">Certification</h3>
+      <h3 class="text-center text-4xl font-semibold pb-12 lg:text-6xl lg:pb-24">
+        Certification
+      </h3>
       <!-- Features Container -->
-       <div class="container mx-auto px-6 pb-14 lg:pb-32">
+      <div class="container mx-auto px-6 pb-14 lg:pb-32">
         <div class="flex flex-col justify-around space-y-16 text-center">
           <!-- item 3 -->
           <div class="item-container">
             <h3 class="feature-desc">IZIN DISTRIBUTOR ALKES KEMENKES RI</h3>
             <h5>22062301280030001</h5>
-           </div>
+          </div>
           <!-- item 1 -->
-           <div class="item-container">
+          <div class="item-container">
             <h3 class="feature-desc">ISO</h3>
             <h5>13485</h5>
-           </div>            
-           <!-- item 2 -->
-           <div class="item-container">
+          </div>
+          <!-- item 2 -->
+          <div class="item-container">
             <h3 class="feature-desc">IZIN EDAR ALKES KEMENKES RI AKL</h3>
             <h5>21104320649</h5>
-           </div>        
+          </div>
         </div>
-       </div>
-       <!-- Image -->
-       <img src="images/mascot-strong.png" alt="" class="mx-auto size-[40%] lg:size-1/4">
+      </div>
+      <!-- Image -->
+      <img
+        src="images/mascot-strong.png"
+        alt=""
+        class="mx-auto size-[40%] lg:size-1/4"
+      />
+    </section>
 
-    </section>    
-    
     <footer class="py-16">
-        <!-- Footer Flex Container -->
-        <div
-          class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
-        >
-          <!-- Social Container -->
-          <div class="flex space-x-10">
-            <a href="https://s.shopee.co.id/AKGSwFHnL3" target="_blank" rel="noopener noreferrer">
-              <img src="images/icon-shopee.svg" alt="icon-shopee" class="h-6 ficon" />
-            </a>
-            <a href="https://x.com/sumimasen_id" target="_blank" rel="noopener noreferrer">
-              <img src="images/icon-twitter.svg" alt="icon-twitter" class="h-6 ficon" />
-            </a>
-            <a href="https://www.instagram.com/sumimasen_id" target="_blank" rel="noopener noreferrer">
-              <img src="images/icon-instagram.svg" alt="icon-instagram" class="h-6 ficon" />
-            </a>
-            <a href="https://tiktok.com/@sumimasen_id" target="_blank" rel="noopener noreferrer">
-              <img src="images/icon-tiktok.svg" alt="icon-tiktok" class="h-6 ficon" />
-            </a>
-            <a href="https://wa.me/+6285179686686" target="_blank" rel="noopener noreferrer">
-              <img src="images/icon-whatsapp.svg" alt="whatsapp" class="h-6 ficon" />
-            </a>
-          </div>
-          <!-- Logo-cropped/Menu Container -->
-          <div
-            class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue"
-          >  
-            <small> © 2023, Sumimasen, Inc. All Rights Reserved.</small>
-          </div>
+      <!-- Footer Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+      >
+        <!-- Social Container -->
+        <div class="flex space-x-10">
+          <a
+            href="https://s.shopee.co.id/AKGSwFHnL3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-shopee.svg"
+              alt="icon-shopee"
+              class="h-6 ficon"
+            />
+          </a>
+          <a
+            href="https://x.com/sumimasen_id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-twitter.svg"
+              alt="icon-twitter"
+              class="h-6 ficon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/sumimasen_id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-instagram.svg"
+              alt="icon-instagram"
+              class="h-6 ficon"
+            />
+          </a>
+          <a
+            href="https://tiktok.com/@sumimasen_id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-tiktok.svg"
+              alt="icon-tiktok"
+              class="h-6 ficon"
+            />
+          </a>
+          <a
+            href="https://wa.me/+6285179686686"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="images/icon-whatsapp.svg"
+              alt="whatsapp"
+              class="h-6 ficon"
+            />
+          </a>
         </div>
-      </footer>
-</body> 
+        <!-- Logo-cropped/Menu Container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-grayishBlue"
+        >
+          <small> © 2023, Sumimasen, Inc. All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
