@@ -51,7 +51,7 @@ body {
 }
 
 .gradient-text {
-  @apply mx-auto bg-gradient-to-tr from-[#696eff]  to-[#f8acff] bg-clip-text text-transparent;
+  @apply mx-auto bg-gradient-to-tr from-[#696eff] to-[#f8acff] bg-clip-text text-transparent;
 }
 
 .item-container {
